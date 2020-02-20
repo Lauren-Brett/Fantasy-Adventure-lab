@@ -38,6 +38,13 @@ public class AttackerPlayerTest {
         assertEquals(0, troll.getHealthPoints());
     }
 
+    @Test
+    public void canKillPlayer(){
+        troll.attack(barabarian);
+        troll.attack(barabarian);
+        assertEquals(false, barabarian.getAlive());
+    }
+
 
 
 

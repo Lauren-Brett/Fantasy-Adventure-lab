@@ -27,4 +27,20 @@ public abstract class MagicPlayer extends Player implements ISpellable{
     public void castSpell(Enemy enemy){
         enemy.setSpellStatus(this.spell.getSpellEffect());
     }
+
+    public void defendWithCreature(Enemy enemy){
+        int startingValue = creature.getDefendValue();
+        int endingValue = startingValue - enemy.getEnemyAttackValue();
+        creature.setDefendValue(endingValue);
+    }
+
+
+    public void setHealthPoints(int healthPoints) {
+        if(this.creature.getDefendValue() <= 0) {
+            super.setHealthPoints(healthPoints);
+            if(healthPoints <= 0){
+                this.setAlive(false);
+            }
+        }
+    }
 }

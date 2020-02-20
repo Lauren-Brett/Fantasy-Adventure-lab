@@ -36,5 +36,15 @@ public class MagicPlayerTest {
         assertEquals("burn", troll.getSpellStatus());
     }
 
+    @Test
+    public void canKillMagicPlayer(){
+        troll.attack(wizard);
+        wizard.defendWithCreature(troll);
+        troll.attack(wizard);
+        wizard.defendWithCreature(troll);
+        troll.attack(wizard);
+        assertEquals(false, wizard.getAlive());
+    }
+
 
 }

@@ -19,4 +19,10 @@ public abstract class Creature {
     public int getDefendValue() {
         return defendValue;
     }
+
+    public void setDefendValue(int defendValue) {
+        this.defendValue = defendValue;
+    }
+
+
 }
