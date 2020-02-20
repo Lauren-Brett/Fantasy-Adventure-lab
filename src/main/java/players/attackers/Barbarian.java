@@ -2,15 +2,15 @@ package players.attackers;
 
 import players.Player;
 
-public class Barbarian extends Player {
-
-    private Weapon weapon;
+public class Barbarian extends AttackerPlayer  {
 
 
     public Barbarian(String name, Weapon weapon){
-        super(name);
-        this.weapon = weapon;
+        super(name, weapon);
+
     }
+
+
 
 
 }

@@ -1,8 +1,8 @@
 package players.attackers;
 
-import game.Enemy;
+import enemies.Enemy;
 
 public interface IAttackable {
 
-    void attack();
+    void attack(IAttackable thing);
 }

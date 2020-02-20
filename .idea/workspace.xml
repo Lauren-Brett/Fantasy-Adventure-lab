@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0dfcdc3-5e72-4ada-be37-eb539004ce6e" name="Default Changelist" comment="" />
+    <list default="true" id="e0dfcdc3-5e72-4ada-be37-eb539004ce6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Orc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Troll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/Gold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/attackers/AttackerPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/healers/HealingItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/Creature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/Dragon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/Ogre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/EnemyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/Enemy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/ICollectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/ICollectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Barbarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/IAttackable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/IAttackable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/healers/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/healers/Cleric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Creature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/IDefendable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/IDefendable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Wardlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/Wardlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BarbarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AttackerPlayerTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +49,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,7 +61,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1Y4MKDFJqT6ARAw0wXeRkzF2Fxt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -43,6 +83,66 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JUnit.EnemyTest">
+    <configuration name="AttackerPlayerTest.canAttackEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AttackerPlayerTest" />
+      <option name="METHOD_NAME" value="canAttackEnemy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnemyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EnemyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnemyTest.canAttackPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EnemyTest" />
+      <option name="METHOD_NAME" value="canAttackPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnemyTest.canGetHealthPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EnemyTest" />
+      <option name="METHOD_NAME" value="canGetHealthPoint" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MagicPlayerTest.canGetCreatureofPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MagicPlayerTest" />
+      <option name="METHOD_NAME" value="canGetCreatureofPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EnemyTest" />
+        <item itemvalue="JUnit.AttackerPlayerTest.canAttackEnemy" />
+        <item itemvalue="JUnit.EnemyTest.canAttackPlayer" />
+        <item itemvalue="JUnit.EnemyTest.canGetHealthPoint" />
+        <item itemvalue="JUnit.MagicPlayerTest.canGetCreatureofPlayer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -55,5 +155,16 @@
       <updated>1582197346734</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

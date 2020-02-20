@@ -1,7 +1,5 @@
 package players.attackers;
 
-import game.Enemy;
-
 public class Weapon {
 
     private String name;
@@ -12,7 +10,11 @@ public class Weapon {
         this.attackValue = attackValue;
     }
 
-//    public void attack(Enemy enemy){
-//        enemy.reduceHealth() -
-//    }
+    public String getName() {
+        return name;
+    }
+
+    public int getAttackValue() {
+        return attackValue;
+    }
 }

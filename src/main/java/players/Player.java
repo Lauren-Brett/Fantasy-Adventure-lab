@@ -14,9 +14,22 @@ public abstract class Player {
         this.name = name;
         this.healthPoints = 10;
         this.bag = new ArrayList<ICollectable>();
+
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public int getHealthPoints() {
+        return healthPoints;
+    }
 
+    public void setHealthPoints(int healthPoints) {
+        this.healthPoints = healthPoints;
+    }
 
+    public ArrayList<ICollectable> getBag() {
+        return bag;
+    }
 }
