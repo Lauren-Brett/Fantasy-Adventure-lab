@@ -1,20 +1,21 @@
 package players;
 
 import game.ICollectable;
+import game.Treasure;
 
 import java.util.ArrayList;
 
-public abstract class Player {
+public abstract class Player implements ICollectable {
 
     private String name;
     private int healthPoints;
-    private ArrayList<ICollectable> bag;
+    private ArrayList<Treasure> bag;
     private Boolean alive;
 
     public Player(String name){
         this.name = name;
         this.healthPoints = 10;
-        this.bag = new ArrayList<ICollectable>();
+        this.bag = new ArrayList<Treasure>();
         this.alive = true;
 
     }
@@ -35,7 +36,7 @@ public abstract class Player {
         }
     }
 
-    public ArrayList<ICollectable> getBag() {
+    public ArrayList<Treasure> getBag() {
         return bag;
     }
 
@@ -53,4 +54,9 @@ public abstract class Player {
 //            this.alive = false;
 //        }
 //    }
+
+    public void collect(Treasure treasure){
+
+        this.bag.add(treasure);
+    }
 }

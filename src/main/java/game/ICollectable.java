@@ -2,5 +2,5 @@ package game;
 
 public interface ICollectable {
 
-    void  collect();
+    void collect(Treasure treasure);
 }
