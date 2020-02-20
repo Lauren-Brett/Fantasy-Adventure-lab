@@ -18,4 +18,6 @@ public class Spell {
     public String getSpellEffect() {
         return spellEffect;
     }
+
+
 }

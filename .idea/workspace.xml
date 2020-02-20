@@ -2,38 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0dfcdc3-5e72-4ada-be37-eb539004ce6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Orc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Troll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/Gold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/attackers/AttackerPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/healers/HealingItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/Spell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/Creature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/Dragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/Ogre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/EnemyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Enemy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/ICollectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/ICollectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Barbarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/IAttackable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/IAttackable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/healers/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/healers/Cleric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Creature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/IDefendable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/creatures/IDefendable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Wardlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/Wardlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BarbarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AttackerPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/healers/IHealable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/healers/IHealable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/ISpellable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/ISpellable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EnemyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/healers/HealerPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/healers/HealerPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/healers/IHealable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/healers/IHealable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/magic/ISpellable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/magic/ISpellable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HealerPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HealerPlayerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MagicPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MagicPlayerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EnemyTest">
+  <component name="RunManager" selected="JUnit.MagicPlayerTest.canCastSpellOnEnemy">
     <configuration name="AttackerPlayerTest.canAttackEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab_fantasy" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,21 +98,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnemyTest.canGetHealthPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HealerPlayerTest.canHealPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab_fantasy" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EnemyTest" />
-      <option name="METHOD_NAME" value="canGetHealthPoint" />
+      <option name="MAIN_CLASS_NAME" value="HealerPlayerTest" />
+      <option name="METHOD_NAME" value="canHealPlayer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MagicPlayerTest.canGetCreatureofPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MagicPlayerTest.canCastSpellOnEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab_fantasy" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MagicPlayerTest" />
-      <option name="METHOD_NAME" value="canGetCreatureofPlayer" />
+      <option name="METHOD_NAME" value="canCastSpellOnEnemy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MagicPlayerTest.canCastSpellOnEnemy" />
+        <item itemvalue="JUnit.HealerPlayerTest.canHealPlayer" />
         <item itemvalue="JUnit.EnemyTest" />
         <item itemvalue="JUnit.AttackerPlayerTest.canAttackEnemy" />
         <item itemvalue="JUnit.EnemyTest.canAttackPlayer" />
-        <item itemvalue="JUnit.EnemyTest.canGetHealthPoint" />
-        <item itemvalue="JUnit.MagicPlayerTest.canGetCreatureofPlayer" />
       </list>
     </recent_temporary>
   </component>
