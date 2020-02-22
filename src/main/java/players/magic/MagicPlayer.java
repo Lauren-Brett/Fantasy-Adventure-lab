@@ -13,7 +13,6 @@ public abstract class MagicPlayer extends Player implements ISpellable{
         super(name);
         this.spell = spell;
         this.creature = creature;
-
     }
 
     public Spell getSpell() {

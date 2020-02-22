@@ -5,15 +5,16 @@ import players.Player;
 
 import java.util.ArrayList;
 
+
 public class Room {
 
     private ArrayList<Enemy> enemies;
-    private Treasure treasure;
+    private ArrayList<Treasure> treasures;
     private ArrayList<Player> players;
 
-    public Room(ArrayList<Enemy> enemies, Treasure treasure, ArrayList<Player> players){
+    public Room(ArrayList<Enemy> enemies, ArrayList<Treasure> treasures, ArrayList<Player> players){
         this.enemies = enemies;
-        this.treasure = treasure;
+        this.treasures = treasures;
         this.players = players;
     }
 
@@ -21,8 +22,8 @@ public class Room {
         return enemies;
     }
 
-    public Treasure getTreasure() {
-        return treasure;
+    public ArrayList<Treasure> getTreasure() {
+        return treasures;
     }
 
     public ArrayList<Player> getPlayers() {
@@ -33,10 +34,18 @@ public class Room {
         return this.players.size();
     }
 
-    public void removeTreasure(Treasure treasure){
-        this.treasure = null;
-    }
 
-   
+//    public void addTreasureToRoom(Treasure treasure){
+//        this.treasure.
+//    }
+//
+    public void removeTreasure(Treasure treasure){
+        if(getNumberOfPlayers() > 1);
+        this.treasures.remove(treasure);
+    }   
+
+
+
+
 
 }

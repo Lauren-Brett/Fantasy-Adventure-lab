@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0dfcdc3-5e72-4ada-be37-eb539004ce6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Gold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Treasure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/ICollectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/ICollectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/Treasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Treasure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/AttackerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/AttackerPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EnemyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/Treasure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Treasure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/attackers/AttackerPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/attackers/AttackerPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/EnemyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/EnemyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RoomTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,32 +66,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoomTest.canCollectTreasure">
-    <configuration name="AttackerPlayerTest.canKillPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab_fantasy" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AttackerPlayerTest" />
-      <option name="METHOD_NAME" value="canKillPlayer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EnemyTest.attacksPlayerWithDefendingCreature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RoomTest.canMagicPlayerCollectTreasure">
+    <configuration name="EnemyTest.attacksPlayerAndPlayerDefendsWithCreature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab_fantasy" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EnemyTest" />
-      <option name="METHOD_NAME" value="attacksPlayerWithDefendingCreature" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MagicPlayerTest.canCastSpellOnEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab_fantasy" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MagicPlayerTest" />
-      <option name="METHOD_NAME" value="canCastSpellOnEnemy" />
+      <option name="METHOD_NAME" value="attacksPlayerAndPlayerDefendsWithCreature" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,6 +87,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoomTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RoomTest.canCollectTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab_fantasy" />
       <option name="PACKAGE_NAME" value="" />
@@ -107,13 +106,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoomTest.canMagicPlayerCollectTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoomTest" />
+      <option name="METHOD_NAME" value="canMagicPlayerCollectTreasure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoomTest.canMagicPlayerCollectTreasure" />
+        <item itemvalue="JUnit.RoomTest" />
+        <item itemvalue="JUnit.EnemyTest.attacksPlayerAndPlayerDefendsWithCreature" />
         <item itemvalue="JUnit.RoomTest.canCollectTreasure" />
         <item itemvalue="JUnit.MagicPlayerTest.canKillMagicPlayer" />
-        <item itemvalue="JUnit.AttackerPlayerTest.canKillPlayer" />
-        <item itemvalue="JUnit.EnemyTest.attacksPlayerWithDefendingCreature" />
-        <item itemvalue="JUnit.MagicPlayerTest.canCastSpellOnEnemy" />
       </list>
     </recent_temporary>
   </component>

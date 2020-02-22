@@ -26,7 +26,6 @@ public abstract class Player implements ICollectable {
 
     public int getHealthPoints() {
         return healthPoints;
-
     }
 
     public void setHealthPoints(int healthPoints) {
@@ -48,7 +47,6 @@ public abstract class Player implements ICollectable {
         this.alive = alive;
     }
 
-    //
 //    public void playerDies(){
 //        if(this.healthPoints <= 0){
 //            this.alive = false;
@@ -56,7 +54,8 @@ public abstract class Player implements ICollectable {
 //    }
 
     public void collect(Treasure treasure){
-
         this.bag.add(treasure);
+
     }
+
 }

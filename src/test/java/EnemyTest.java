@@ -19,6 +19,9 @@ public class EnemyTest {
     private Ogre ogre;
     private Spell spell;
 
+
+    //Orc is ENEMY
+    //Troll is ENEMY
     @Before
     public void before(){
         orc = new Orc("Ron", 6, 3);
@@ -41,12 +44,14 @@ public class EnemyTest {
     }
 
     @Test
-    public void attacksPlayerWithDefendingCreature(){
+    public void attacksPlayerAndPlayerDefendsWithCreature(){
         orc.attack(wizard);
         wizard.castSpell(orc);
         wizard.defendWithCreature(orc);
         assertEquals(17, ogre.getDefendValue());
     }
+
+
 
 
 }
