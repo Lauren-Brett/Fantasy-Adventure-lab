@@ -3,31 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e0dfcdc3-5e72-4ada-be37-eb539004ce6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/AttackerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/AttackerPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/Barbarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/attackers/IAttackable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/attackers/IAttackable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/Spell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AttackerPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AttackerPlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EnemyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enemies/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enemies/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/game/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/attackers/AttackerPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/attackers/AttackerPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/attackers/IAttackable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/attackers/IAttackable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/healers/HealerPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/healers/HealerPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/magic/Spell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/magic/Spell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AttackerPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AttackerPlayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/EnemyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/EnemyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MagicPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MagicPlayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RoomTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,16 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoomTest.roomCompletesGameEnemyDies">
-    <configuration name="MagicPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab_fantasy" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MagicPlayerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RoomTest.roomContinuesGamePlayerHealed">
     <configuration name="RoomTest.canMagicPlayerCollectTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab_fantasy" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,6 +70,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RoomTest" />
       <option name="METHOD_NAME" value="roomCompletesGameEnemyDies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomTest.roomContinuesGamePlayerHealed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab_fantasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoomTest" />
+      <option name="METHOD_NAME" value="roomContinuesGamePlayerHealed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoomTest.roomContinuesGamePlayerHealed" />
         <item itemvalue="JUnit.RoomTest.roomCompletesGameEnemyDies" />
         <item itemvalue="JUnit.RoomTest.roomGetEnemyAttackPlayersDefend" />
         <item itemvalue="JUnit.RoomTest.roomGetEnemyToAttack" />
         <item itemvalue="JUnit.RoomTest.canMagicPlayerCollectTreasure" />
-        <item itemvalue="JUnit.MagicPlayerTest" />
       </list>
     </recent_temporary>
   </component>

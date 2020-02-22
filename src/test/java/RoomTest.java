@@ -8,6 +8,9 @@ import game.Treasure;
 import org.junit.Before;
 import org.junit.Test;
 import players.Player;
+import players.attackers.AttackerPlayer;
+import players.attackers.Knight;
+import players.attackers.Weapon;
 import players.healers.Cleric;
 import players.healers.HealingItem;
 import players.magic.ISpellable;
@@ -112,6 +115,21 @@ public class RoomTest {
         assertEquals(0, room.getEnemies());
     }
 
+
+    @Test
+    public void roomContinuesGamePlayerHealed(){
+        Weapon weapon = new Weapon("knife", 2);
+        Knight knight = new Knight("Will", weapon);
+        ArrayList<Player> players1 = new ArrayList<Player>();
+        players1.add(knight);
+        players1.add(cleric);
+        Room room1 = new Room(enemies, treasures, players1);
+        room1.runEnemyAttack();
+        cleric.heal(knight);
+        assertEquals(10, wardlock.getHealthPoints());
+        assertEquals(8, knight.getHealthPoints());
+        assertEquals(2, room1.getEnemies());
+    }
 
 //       wardlock.castSpell(troll);
 ////        wardlock.defendWithCreature(troll);
