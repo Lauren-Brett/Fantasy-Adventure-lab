@@ -18,9 +18,10 @@ public class Room {
         this.players = players;
     }
 
-    public ArrayList<Enemy> getEnemies() {
-        return enemies;
+    public int getEnemies() {
+        return enemies.size();
     }
+
 
     public ArrayList<Treasure> getTreasure() {
         return treasures;
@@ -34,17 +35,42 @@ public class Room {
         return this.players.size();
     }
 
+    public void addTreasureToRoom(Treasure treasure){
+        this.treasures.add(treasure);
+    }
 
-//    public void addTreasureToRoom(Treasure treasure){
-//        this.treasure.
-//    }
-//
     public void removeTreasure(Treasure treasure){
-        if(getNumberOfPlayers() > 1);
         this.treasures.remove(treasure);
-    }   
+    }
+    // battle
+    //
+    // enemy has been defeated so player must have got all the treasue
+    //
 
 
+
+    public void runEnemyAttack(){
+        for(Enemy enemy : this.enemies){
+            for(Player player : this.players){
+                enemy.attack(player);
+            }
+        }
+    }
+    //when all enemies are 0 room is complete
+    public boolean checkAllEnemiesDead(){
+        int enemyStatus = getEnemies();
+        if(enemyStatus >= 0){
+            enemies.clear();
+        }
+        return enemyStatus <= 0;
+
+//        if(enemyStatus <= 0){
+//            enemies.remove(en);
+//        }
+
+        //if enenmy healthPoints = 0
+        //return enemyStatus
+    }
 
 
 

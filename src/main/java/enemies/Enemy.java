@@ -1,7 +1,6 @@
 package enemies;
 
 import players.Player;
-import players.attackers.IAttackable;
 
 public abstract class Enemy {
 
@@ -14,7 +13,7 @@ public abstract class Enemy {
         this.name = name;
         this.healthPoints = healthPoints;
         this.enemyAttackValue = enemyAttackValue;
-        this.spellStatus = null;
+        this.spellStatus = spellStatus;
     }
 
     public String getName() {
@@ -44,6 +43,10 @@ public abstract class Enemy {
     public void attack(Player player){
         int startingHealth = player.getHealthPoints();
         int newHealth = startingHealth - this.enemyAttackValue;
-        player.setHealthPoints(newHealth);
+           if(newHealth <= 0 ){
+            player.setHealthPoints(0);
+          } else {
+            player.setHealthPoints(newHealth);
+        }
     }
 }

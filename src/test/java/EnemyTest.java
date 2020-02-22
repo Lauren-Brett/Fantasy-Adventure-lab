@@ -28,7 +28,7 @@ public class EnemyTest {
         weapon = new Weapon("Sword", 3);
         knight = new Knight("Steve", weapon);
         ogre = new Ogre("Dolly", 20);
-        spell = new Spell("Ice", "freeze");
+        spell = new Spell("Ice", 3);
         wizard = new Wizard("Fred", spell, ogre);
     }
 
@@ -49,6 +49,7 @@ public class EnemyTest {
         wizard.castSpell(orc);
         wizard.defendWithCreature(orc);
         assertEquals(17, ogre.getDefendValue());
+        assertEquals(3, orc.getHealthPoints());
     }
 
 

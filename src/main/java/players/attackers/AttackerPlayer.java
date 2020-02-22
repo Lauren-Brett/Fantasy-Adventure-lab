@@ -16,7 +16,7 @@ public abstract class AttackerPlayer extends Player implements IAttackable {
         return weapon;
     }
 
-    public void attack(Enemy enemy){
+    public void attackEnemy(Enemy enemy){
         int startingHealth = enemy.getHealthPoints();
         int newHealth = startingHealth - this.weapon.getAttackValue();
         enemy.setHealthPoints(newHealth);

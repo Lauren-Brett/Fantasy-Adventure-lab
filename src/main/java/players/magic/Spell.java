@@ -3,10 +3,10 @@ package players.magic;
 public class Spell {
 
     private String type;
-    private String spellEffect;
+    private int spellEffect;
 
 
-    public Spell(String type, String spellEffect){
+    public Spell(String type, int spellEffect){
         this.spellEffect = spellEffect;
         this.type = type;
     }
@@ -15,7 +15,7 @@ public class Spell {
         return type;
     }
 
-    public String getSpellEffect() {
+    public int getSpellEffect() {
         return spellEffect;
     }
 

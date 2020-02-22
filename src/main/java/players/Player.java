@@ -1,5 +1,6 @@
 package players;
 
+import enemies.Enemy;
 import game.ICollectable;
 import game.Treasure;
 
@@ -40,7 +41,8 @@ public abstract class Player implements ICollectable {
     }
 
     public Boolean getAlive() {
-        return this.alive;
+        if (getHealthPoints() <= 0);
+            return this.alive;
     }
 
     public void setAlive(Boolean alive) {
@@ -55,7 +57,24 @@ public abstract class Player implements ICollectable {
 
     public void collect(Treasure treasure){
         this.bag.add(treasure);
-
     }
+
+
+  // make all players attack the enemy
+    // override attack method, magicP uses the spell, cleric looses points and
+    //can heal himself if he looses 1 point to gain 2
+
+    //ervey player needs to have a 'weapon'
+    //  Attackable player has weapon
+    //  Healers have heal power when attacked that give themselevs a point
+    //  Magics have a spell that takes off enemyP
+
+//    public void attackEnemy(Enemy enemy){
+//
+//
+//        int startingEnemyHealth = enemy.getHealthPoints();
+//        int newHealth = startingEnemyHealth - this.player.getAttackValue();
+//        enemy.setHealthPoints(newHealth);
+//    }
 
 }

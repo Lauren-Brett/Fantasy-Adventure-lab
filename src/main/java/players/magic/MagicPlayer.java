@@ -24,15 +24,24 @@ public abstract class MagicPlayer extends Player implements ISpellable{
     }
 
     public void castSpell(Enemy enemy){
-        enemy.setSpellStatus(this.spell.getSpellEffect());
+
+        int startingHealth = enemy.getHealthPoints();
+        int newHealth = startingHealth - spell.getSpellEffect();
+           if(newHealth <= 0) {
+               enemy.setHealthPoints(0);
+           } else {
+            enemy.setHealthPoints(newHealth);
+           }
+
+
     }
+
 
     public void defendWithCreature(Enemy enemy){
         int startingValue = creature.getDefendValue();
         int endingValue = startingValue - enemy.getEnemyAttackValue();
         creature.setDefendValue(endingValue);
     }
-
 
     public void setHealthPoints(int healthPoints) {
         if(this.creature.getDefendValue() <= 0) {
@@ -42,4 +51,6 @@ public abstract class MagicPlayer extends Player implements ISpellable{
             }
         }
     }
+
+
 }

@@ -1,8 +1,9 @@
 package players.healers;
 
+import enemies.Enemy;
 import players.Player;
 
-public class HealerPlayer extends Player implements IHealable {
+public abstract class HealerPlayer extends Player implements IHealable {
 
     private HealingItem healingItem;
 
@@ -22,4 +23,8 @@ public class HealerPlayer extends Player implements IHealable {
         player.setHealthPoints(newHealth);
 
     }
+
+//    public void attackEnemy(Enemy enemy){
+//
+//    }
 }

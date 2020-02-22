@@ -1,30 +1,27 @@
-import enemies.Enemy;
 import enemies.Troll;
 import org.junit.Before;
 import org.junit.Test;
 import players.attackers.Barbarian;
 import players.attackers.Weapon;
 
-import javax.swing.*;
-
 import static org.junit.Assert.assertEquals;
 
 public class AttackerPlayerTest {
 
-    private Barbarian barabarian;
+    private Barbarian barbarian;
     private Weapon weapon;
     private Troll troll;
 
     @Before
         public void before(){
         weapon = new Weapon("Club", 5);
-        barabarian = new Barbarian("Bob", weapon);
+        barbarian = new Barbarian("Bob", weapon);
         troll = new Troll("Stanly", 5, 7);
     }
 
     @Test
     public void hasWeapon(){
-        assertEquals(weapon, barabarian.getWeapon());
+        assertEquals(weapon, barbarian.getWeapon());
     }
 
     @Test
@@ -34,15 +31,15 @@ public class AttackerPlayerTest {
 
     @Test
     public void canAttackEnemy(){
-        barabarian.attack(troll);
+        barbarian.attackEnemy(troll);
         assertEquals(0, troll.getHealthPoints());
     }
 
     @Test
     public void canKillPlayer(){
-        troll.attack(barabarian);
-        troll.attack(barabarian);
-        assertEquals(false, barabarian.getAlive());
+        troll.attack(barbarian);
+        troll.attack(barbarian);
+        assertEquals(false, barbarian.getAlive());
     }
 
 

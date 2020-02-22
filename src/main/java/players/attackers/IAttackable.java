@@ -4,5 +4,5 @@ import enemies.Enemy;
 
 public interface IAttackable {
 
-    void attack(Enemy enemy);
+    void attackEnemy(Enemy enemy);
 }
