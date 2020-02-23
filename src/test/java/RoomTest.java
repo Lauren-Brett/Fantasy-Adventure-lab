@@ -80,20 +80,12 @@ public class RoomTest {
 
     @Test
     public void canMagicPlayerCollectTreasure(){
-        wardlock.defendWithCreature(troll);
-        wardlock.castSpell(troll);
-        room.runEnemyAttack();
-//        room.checkForVictory();
-
-//        wardlock.collect(treasure1);
-//        wardlock.collect(treasure2);
-//        room.removeTreasure(treasure1);
-//        room.removeTreasure(treasure2);
-        assertEquals(4, dragon.getDefendValue());
-        assertEquals(0, troll.getSpellStatus());
+        wardlock.collect(treasure1);
+        wardlock.collect(treasure2);
+        room.removeTreasure(treasure1);
+        room.removeTreasure(treasure2);
         assertEquals(2, wardlock.getBag().size());
         assertEquals(1, room.getTreasure().size());
-        assertEquals(2, room.getNumberOfPlayers());
     }
 
     @Test
@@ -128,11 +120,29 @@ public class RoomTest {
         cleric.heal(knight);
         assertEquals(10, wardlock.getHealthPoints());
         assertEquals(8, knight.getHealthPoints());
-        assertEquals(2, room1.getEnemies());
+        assertEquals(false, room1.checkAllEnemiesDead());
+        assertEquals(2, room1.numberEnemies());
     }
 
 //       wardlock.castSpell(troll);
 ////        wardlock.defendWithCreature(troll);
 ////        assertEquals(0, troll.getHealthPoints());
+
+
+//    @Test
+//    public void checkRoomForVictory() {
+//        wardlock.defendWithCreature(troll);
+//        wardlock.castSpell(troll);
+//        room.runEnemyAttack();
+//        room.checkForVictory();
+//        assertEquals(4, dragon.getDefendValue());
+//        assertEquals(0, troll.getSpellStatus());
+//        assertEquals(2, room.getNumberOfPlayers());
+//    }
+
+//    @Test
+//    public void checkEnemiesAreALlDead(){
+//
+//    }
 
 }

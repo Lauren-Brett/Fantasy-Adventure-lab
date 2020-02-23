@@ -19,7 +19,22 @@ public class Room {
     }
 
     public int getEnemies() {
-        return enemies.size();
+        return this.enemies.size();
+    }
+
+    public int getEnemyAtIndex(int index){
+        return this.enemies.get(index);
+    }
+
+    public int numberEnemies(){
+        int total = 0;
+////      for(Enemy enemy : this.enemies){
+////         total += enemy;
+////      }
+////      return total;
+        for (int i = 0; i < getEnemies(); i++){
+            total +=getEnemyAtIndex(i);
+        }
     }
 
 
@@ -42,10 +57,13 @@ public class Room {
     public void removeTreasure(Treasure treasure){
         this.treasures.remove(treasure);
     }
-    // battle
-    //
     // enemy has been defeated so player must have got all the treasue
-    //
+    public void checkForVictory(){
+        if(checkAllEnemiesDead()){
+
+        }
+    }
+
 
 
 
@@ -71,6 +89,7 @@ public class Room {
         //if enenmy healthPoints = 0
         //return enemyStatus
     }
+
 
 
 
