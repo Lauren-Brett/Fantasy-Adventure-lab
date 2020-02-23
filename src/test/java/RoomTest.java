@@ -67,10 +67,17 @@ public class RoomTest {
     }
 
     @Test
+    public void canCheckNumberOfPlayersInRoom(){
+        assertEquals(2, room.getNumberOfPlayers());
+    }
+
+
+    @Test
     public void canCollectTreasure(){
         cleric.collect(treasure1);
         room.removeTreasure(treasure1);
-        assertEquals(1, cleric.getBag().size());
+        assertEquals(1, cleric.playerAmountOfTreasure());
+
     }
 
 
@@ -80,8 +87,8 @@ public class RoomTest {
         wardlock.collect(treasure2);
         room.removeTreasure(treasure1);
         room.removeTreasure(treasure2);
-        assertEquals(2, wardlock.getBag().size());
-        assertEquals(1, room.getTreasure().size());
+        assertEquals(1, wardlock.playerAmountOfTreasure());
+        assertEquals(1, room.getAmountOfTreasure());
     }
 
     @Test
@@ -100,7 +107,7 @@ public class RoomTest {
         wardlock.castSpell(orc);
         wardlock.castSpell(orc);
 //        room.allEnemiesDead();
-        room.testallEnemiesDead();
+        room.testAllEnemiesDead();
         assertEquals(10, wardlock.getHealthPoints());
         assertEquals(0, cleric.getHealthPoints());
         assertEquals(0, troll.getHealthPoints());
@@ -121,13 +128,9 @@ public class RoomTest {
         cleric.heal(knight);
         assertEquals(10, wardlock.getHealthPoints());
         assertEquals(8, knight.getHealthPoints());
-//        assertEquals(false, room1.allEnemiesDead());
+        assertEquals(false, room1.allEnemiesDead());
 
     }
-
-//       wardlock.castSpell(troll);
-////        wardlock.defendWithCreature(troll);
-////        assertEquals(0, troll.getHealthPoints());
 
 
 //    @Test

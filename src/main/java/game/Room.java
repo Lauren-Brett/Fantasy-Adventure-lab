@@ -40,8 +40,8 @@ public class Room implements IDieable {
 //    }
 
 
-    public ArrayList<Treasure> getTreasure() {
-        return treasures;
+    public int getAmountOfTreasure() {
+        return treasures.size();
     }
 
     public ArrayList<Player> getPlayers() {
@@ -51,17 +51,15 @@ public class Room implements IDieable {
     public int getNumberOfPlayers(){
         return this.players.size();
     }
-
-
+    
     public void removeTreasure(Treasure treasure){
         this.treasures.remove(treasure);
     }
 
     public void removeEnemy(Enemy enemy){
-
             this.enemies.remove(enemy);
-
     }
+
     // enemy has been defeated so player must have got all the treasue
 //    public void checkForVictory(){
 //        if(allEnemiesDead());
@@ -78,16 +76,17 @@ public class Room implements IDieable {
         }
     }
     //when all enemies are 0 room is complete
-//    public boolean allEnemiesDead(){
-//        int enemyStatus = getEnemies();
-//        if(enemyStatus >= 0){
-//            enemies.clear();
-//        }
-//        return enemyStatus <= 0;
-//
-//    }
+    //////////////////////////////////////
+    public boolean allEnemiesDead(){
+        int enemyStatus = getEnemies();
+        if(enemyStatus >= 0){
+            enemies.clear();
+        }
+        return enemyStatus <= 0;
 
-    public void testallEnemiesDead(){
+    }
+
+    public void testAllEnemiesDead(){
 //        int enemyStatus = getEnemies();
         for(Enemy enemy : enemies){
             if(enemy.getHealthPoints() <= 0){
@@ -105,6 +104,8 @@ public class Room implements IDieable {
     }
 
 
+    public void enemyDeadCollectTreasure(Enemy enemy){
 
+    }
 
 }

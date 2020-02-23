@@ -36,8 +36,8 @@ public abstract class Player implements ICollectable {
         }
     }
 
-    public ArrayList<Treasure> getBag() {
-        return bag;
+    public int playerAmountOfTreasure() {
+        return bag.size();
     }
 
     public Boolean getAlive() {
@@ -56,11 +56,12 @@ public abstract class Player implements ICollectable {
 //    }
 
     public void collect(Treasure treasure){
-
+        //only collect if player kills enemy
         this.bag.add(treasure);
 
-//onnly collect if player kills enemy
     }
+
+
 
 
   // make all players attack the enemy
