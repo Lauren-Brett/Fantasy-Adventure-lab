@@ -99,13 +99,13 @@ public class RoomTest {
         wardlock.castSpell(orc);
         wardlock.castSpell(orc);
         wardlock.castSpell(orc);
-//        room.removeEnemy(orc);
-//        room.removeEnemy(troll);
+//        room.allEnemiesDead();
+        room.testallEnemiesDead();
         assertEquals(10, wardlock.getHealthPoints());
         assertEquals(0, cleric.getHealthPoints());
         assertEquals(0, troll.getHealthPoints());
-
-        assertEquals(true, room.allEnemiesDead());
+        assertEquals(0, orc.getHealthPoints());
+        assertEquals(0, room.getEnemies());
     }
 
 
@@ -121,7 +121,7 @@ public class RoomTest {
         cleric.heal(knight);
         assertEquals(10, wardlock.getHealthPoints());
         assertEquals(8, knight.getHealthPoints());
-        assertEquals(false, room1.allEnemiesDead());
+//        assertEquals(false, room1.allEnemiesDead());
 
     }
 

@@ -1,4 +1,3 @@
-import enemies.Enemy;
 import enemies.Troll;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,7 +41,7 @@ public class HealerPlayerTest {
 
     @Test
     public void canHealPlayer(){
-        troll.attack(dwarf);
+        troll.attackPlayer(dwarf);
         cleric.heal(dwarf);
         assertEquals(7, dwarf.getHealthPoints());
     }

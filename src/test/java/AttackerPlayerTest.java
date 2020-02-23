@@ -37,8 +37,8 @@ public class AttackerPlayerTest {
 
     @Test
     public void canKillPlayer(){
-        troll.attack(barbarian);
-        troll.attack(barbarian);
+        troll.attackPlayer(barbarian);
+        troll.attackPlayer(barbarian);
         assertEquals(false, barbarian.getAlive());
     }
 

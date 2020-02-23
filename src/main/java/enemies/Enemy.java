@@ -2,11 +2,11 @@ package enemies;
 
 import players.Player;
 
-public abstract class Enemy {
+public abstract class Enemy implements IDieable {
 
     private String name;
     private int healthPoints;
-    private int enemyAttackValue;
+    public int enemyAttackValue;
     private String spellStatus;
 
     public Enemy(String name, int healthPoints, int enemyAttackValue){
@@ -37,7 +37,7 @@ public abstract class Enemy {
     }
 
 
-    public void enemyDies(){
+    public void enemyDies(Enemy enemy){
         if(this.getHealthPoints() <= 0){
             setHealthPoints(0);
             this.enemyAttackValue = 0;
@@ -48,7 +48,7 @@ public abstract class Enemy {
         this.spellStatus = spellStatus;
     }
 
-    public void attack(Player player){
+    public void attackPlayer(Player player){
         int startingHealth = player.getHealthPoints();
         int newHealth = startingHealth - this.enemyAttackValue;
            if(newHealth <= 0 ){

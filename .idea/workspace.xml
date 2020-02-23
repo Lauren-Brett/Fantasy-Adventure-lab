@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0dfcdc3-5e72-4ada-be37-eb539004ce6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/IDieable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Orc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Troll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Troll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Treasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Treasure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/healers/HealerPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/magic/MagicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AttackerPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AttackerPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EnemyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HealerPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MagicPlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/enemies/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enemies/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enemies/Orc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enemies/Orc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enemies/Troll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enemies/Troll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/game/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/game/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/players/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/healers/HealerPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/healers/HealerPlayer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/magic/MagicPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AttackerPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AttackerPlayerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/EnemyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/EnemyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HealerPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HealerPlayerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MagicPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MagicPlayerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RoomTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -116,9 +131,9 @@
       <list>
         <item itemvalue="JUnit.RoomTest.roomCompletesGameEnemyDies" />
         <item itemvalue="JUnit.RoomTest" />
+        <item itemvalue="JUnit.RoomTest.roomContinuesGamePlayerHealed" />
         <item itemvalue="JUnit.RoomTest.canCollectTreasure" />
         <item itemvalue="JUnit.RoomTest.canMagicPlayerCollectTreasure" />
-        <item itemvalue="JUnit.RoomTest.roomContinuesGamePlayerHealed" />
       </list>
     </recent_temporary>
   </component>
@@ -145,5 +160,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RoomTest.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,6 +1,7 @@
 package players.magic;
 
 import enemies.Enemy;
+import enemies.IDieable;
 import players.Player;
 import players.magic.creatures.Creature;
 
@@ -34,7 +35,7 @@ public abstract class MagicPlayer extends Player implements ISpellable{
             enemy.setHealthPoints(newHealth);
            }
            if(enemy.getHealthPoints() <= 0){
-               enemy.enemyDies();
+               enemy.enemyDies(enemy);
            }
 
 

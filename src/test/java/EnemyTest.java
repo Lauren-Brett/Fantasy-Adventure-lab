@@ -5,7 +5,6 @@ import players.attackers.Knight;
 import players.attackers.Weapon;
 import players.magic.Spell;
 import players.magic.Wizard;
-import players.magic.creatures.Creature;
 import players.magic.creatures.Ogre;
 
 import static org.junit.Assert.assertEquals;
@@ -39,13 +38,13 @@ public class EnemyTest {
 
     @Test
     public void canAttackPlayer(){
-        orc.attack(knight);
+        orc.attackPlayer(knight);
         assertEquals(7, knight.getHealthPoints());
     }
 
     @Test
     public void attacksPlayerAndPlayerDefendsWithCreature(){
-        orc.attack(wizard);
+        orc.attackPlayer(wizard);
         wizard.castSpell(orc);
         wizard.defendWithCreature(orc);
         assertEquals(17, ogre.getDefendValue());

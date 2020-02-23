@@ -1,14 +1,13 @@
 package game;
 
 import enemies.Enemy;
+import enemies.IDieable;
 import players.Player;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.TreeSet;
 
 
-public class Room {
+public class Room implements IDieable {
 
     private ArrayList<Enemy> enemies;
     private ArrayList<Treasure> treasures;
@@ -59,9 +58,9 @@ public class Room {
     }
 
     public void removeEnemy(Enemy enemy){
-        if (getEnemies() > 0) {
+
             this.enemies.remove(enemy);
-        }
+
     }
     // enemy has been defeated so player must have got all the treasue
 //    public void checkForVictory(){
@@ -74,17 +73,35 @@ public class Room {
     public void runEnemyAttack(){
         for(Enemy enemy : this.enemies){
             for(Player player : this.players){
-                enemy.attack(player);
+                enemy.attackPlayer(player);
             }
         }
     }
     //when all enemies are 0 room is complete
-    public boolean allEnemiesDead(){
-        int enemyStatus = getEnemies();
-        if(enemyStatus >= 0){
-            enemies.clear();
+//    public boolean allEnemiesDead(){
+//        int enemyStatus = getEnemies();
+//        if(enemyStatus >= 0){
+//            enemies.clear();
+//        }
+//        return enemyStatus <= 0;
+//
+//    }
+
+    public void testallEnemiesDead(){
+//        int enemyStatus = getEnemies();
+        for(Enemy enemy : enemies){
+            if(enemy.getHealthPoints() <= 0){
+                removeEnemy(enemy);
+            }
         }
-        return enemyStatus <= 0;
+    }
+
+
+    public void enemyDies(Enemy enemy){
+        if(enemy.getHealthPoints() <= 0){
+            enemy.setHealthPoints(0);
+            enemy.enemyAttackValue = 0;
+        }
     }
 
 

@@ -1,6 +1,5 @@
 package players.healers;
 
-import enemies.Enemy;
 import players.Player;
 
 public abstract class HealerPlayer extends Player implements IHealable {

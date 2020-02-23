@@ -1,10 +1,8 @@
 import enemies.Troll;
 import org.junit.Before;
 import org.junit.Test;
-import players.attackers.Weapon;
 import players.magic.Spell;
 import players.magic.Wizard;
-import players.magic.creatures.Creature;
 import players.magic.creatures.Dragon;
 
 import static org.junit.Assert.assertEquals;
@@ -38,11 +36,11 @@ public class MagicPlayerTest {
 
     @Test
     public void canKillMagicPlayer(){
-        troll.attack(wizard);
+        troll.attackPlayer(wizard);
         wizard.defendWithCreature(troll);
-        troll.attack(wizard);
+        troll.attackPlayer(wizard);
         wizard.defendWithCreature(troll);
-        troll.attack(wizard);
+        troll.attackPlayer(wizard);
         assertEquals(false, wizard.getAlive());
     }
 
