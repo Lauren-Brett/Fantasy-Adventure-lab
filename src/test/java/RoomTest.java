@@ -1,19 +1,15 @@
-import com.sun.tools.javac.tree.DCTree;
 import enemies.Enemy;
 import enemies.Orc;
 import enemies.Troll;
-import game.ICollectable;
 import game.Room;
 import game.Treasure;
 import org.junit.Before;
 import org.junit.Test;
 import players.Player;
-import players.attackers.AttackerPlayer;
 import players.attackers.Knight;
 import players.attackers.Weapon;
 import players.healers.Cleric;
 import players.healers.HealingItem;
-import players.magic.ISpellable;
 import players.magic.Spell;
 import players.magic.Wardlock;
 import players.magic.Wizard;
@@ -100,11 +96,16 @@ public class RoomTest {
         room.runEnemyAttack();
         wardlock.castSpell(troll);
         wardlock.castSpell(troll);
-        room.checkAllEnemiesDead();
+        wardlock.castSpell(orc);
+        wardlock.castSpell(orc);
+        wardlock.castSpell(orc);
+//        room.removeEnemy(orc);
+//        room.removeEnemy(troll);
         assertEquals(10, wardlock.getHealthPoints());
         assertEquals(0, cleric.getHealthPoints());
         assertEquals(0, troll.getHealthPoints());
-        assertEquals(0, room.getEnemies());
+
+        assertEquals(true, room.allEnemiesDead());
     }
 
 
@@ -120,8 +121,8 @@ public class RoomTest {
         cleric.heal(knight);
         assertEquals(10, wardlock.getHealthPoints());
         assertEquals(8, knight.getHealthPoints());
-        assertEquals(false, room1.checkAllEnemiesDead());
-        assertEquals(2, room1.numberEnemies());
+        assertEquals(false, room1.allEnemiesDead());
+
     }
 
 //       wardlock.castSpell(troll);

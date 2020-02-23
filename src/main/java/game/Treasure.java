@@ -12,5 +12,4 @@ public class Treasure  {
         return name;
     }
 
-
 }

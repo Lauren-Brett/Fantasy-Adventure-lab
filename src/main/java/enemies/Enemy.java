@@ -36,6 +36,14 @@ public abstract class Enemy {
         return spellStatus;
     }
 
+
+    public void enemyDies(){
+        if(this.getHealthPoints() <= 0){
+            setHealthPoints(0);
+            this.enemyAttackValue = 0;
+        }
+    }
+
     public void setSpellStatus(String spellStatus) {
         this.spellStatus = spellStatus;
     }

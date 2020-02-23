@@ -57,6 +57,8 @@ public abstract class Player implements ICollectable {
 
     public void collect(Treasure treasure){
         this.bag.add(treasure);
+
+//onnly collect if player kills enemy
     }
 
 

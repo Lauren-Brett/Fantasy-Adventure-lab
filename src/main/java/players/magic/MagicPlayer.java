@@ -29,8 +29,12 @@ public abstract class MagicPlayer extends Player implements ISpellable{
         int newHealth = startingHealth - spell.getSpellEffect();
            if(newHealth <= 0) {
                enemy.setHealthPoints(0);
+               super.setAlive(false);
            } else {
             enemy.setHealthPoints(newHealth);
+           }
+           if(enemy.getHealthPoints() <= 0){
+               enemy.enemyDies();
            }
 
 

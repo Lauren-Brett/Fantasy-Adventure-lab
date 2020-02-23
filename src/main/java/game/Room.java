@@ -4,6 +4,8 @@ import enemies.Enemy;
 import players.Player;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.TreeSet;
 
 
 public class Room {
@@ -22,20 +24,21 @@ public class Room {
         return this.enemies.size();
     }
 
-    public int getEnemyAtIndex(int index){
-        return this.enemies.get(index);
-    }
+//    public int getEnemyAtIndex(int index){
+//        return this.enemies.get(index);
+//    }
 
-    public int numberEnemies(){
-        int total = 0;
-////      for(Enemy enemy : this.enemies){
-////         total += enemy;
-////      }
-////      return total;
-        for (int i = 0; i < getEnemies(); i++){
-            total +=getEnemyAtIndex(i);
-        }
-    }
+//    public int numberEnemies(){
+//        int total = 0;
+//////      for(Enemy enemy : this.enemies){
+//////         total += enemy;
+//////      }
+//////      return total;
+    ///////////////////////////////////////////////////
+//        for (int i = 0; i < getEnemies(); i++){
+//            total +=getEnemyAtIndex(i);
+//        }
+//    }
 
 
     public ArrayList<Treasure> getTreasure() {
@@ -50,21 +53,22 @@ public class Room {
         return this.players.size();
     }
 
-    public void addTreasureToRoom(Treasure treasure){
-        this.treasures.add(treasure);
-    }
 
     public void removeTreasure(Treasure treasure){
         this.treasures.remove(treasure);
     }
-    // enemy has been defeated so player must have got all the treasue
-    public void checkForVictory(){
-        if(checkAllEnemiesDead()){
 
+    public void removeEnemy(Enemy enemy){
+        if (getEnemies() > 0) {
+            this.enemies.remove(enemy);
         }
     }
-
-
+    // enemy has been defeated so player must have got all the treasue
+//    public void checkForVictory(){
+//        if(allEnemiesDead());
+//        removeTreasure();
+//        }
+//    }
 
 
     public void runEnemyAttack(){
@@ -75,19 +79,12 @@ public class Room {
         }
     }
     //when all enemies are 0 room is complete
-    public boolean checkAllEnemiesDead(){
+    public boolean allEnemiesDead(){
         int enemyStatus = getEnemies();
         if(enemyStatus >= 0){
             enemies.clear();
         }
         return enemyStatus <= 0;
-
-//        if(enemyStatus <= 0){
-//            enemies.remove(en);
-//        }
-
-        //if enenmy healthPoints = 0
-        //return enemyStatus
     }
 
 
